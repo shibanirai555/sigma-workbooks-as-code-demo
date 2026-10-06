@@ -1,5 +1,5 @@
 name: "Plugs Electronics — Sales Overview"
-folderId: "YOUR-FOLDER-ID-HERE"
+folderId: "50lmoNEUdZhixjo61D6IgN"
 description: "Sales performance dashboard managed via GitHub. Source: sample data via custom SQL."
 contents:
   schemaVersion: 1
@@ -277,7 +277,7 @@ contents:
     - id: sales-source
       kind: table
       source:
-        connectionId: "YOUR-CONNECTION-ID-HERE"
+        connectionId: "fd653b9d-4db0-42db-bbfd-df01c4c09598"
         statement: |
           WITH sales AS (
             SELECT DATEADD('day', -170, CURRENT_DATE()) AS order_date, 'West' AS store_region, 'SF Downtown' AS store_name, 'Phones' AS product_type, 'Electronics' AS product_family, 1001 AS order_number, 899.99 AS revenue, 314.99 AS profit, 585.00 AS cogs, 1 AS quantity
